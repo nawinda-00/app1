@@ -1,18 +1,18 @@
 import React, {useRef} from 'react'
 
 export default function Refsfunc() {
-  const num1 = useRef()
-  const num2 = useRef()
-  const operator = React.useRef()
-  const result = React.useRef()
+    const num1 = useRef()
+    const num2 = useRef()
+    const operator = React.useRef()
+    const result = React.useRef()
 
-  const calculate = (ev) => {
-    let op = ev.target.innerText
-    let n1 = parseFloat(num1.current.innerText)
-    let n2 = parseFloat(num2.current.innerText)
-    let r = eval(`${n1} ${op} ${n2}`)
-    result.current.innerText = r
-    operator.current.innerText = op
+    const calculate = (ev) => {
+        let op = ev.target.innerText
+        let n1 = parseFloat(num1.current.innerText)
+        let n2 = parseFloat(num2.current.innerText)
+        let r = eval(`${n1} ${op} ${n2}`)
+        result.current.innerText = r
+        operator.current.innerText = op
   }
 
   return (
