@@ -1,6 +1,7 @@
 import React from 'react';
-import MessageBox from './state-func';
+import Effect from './effect';
+
 
 export default function App() {
-  return <MessageBox/>;
+  return <Effect/>;
 }
